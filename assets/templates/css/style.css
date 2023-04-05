@@ -25,23 +25,21 @@ header .container {
     min-height: 97px;
 }
 header .logo img {
-    height: 40px;
+    height: 80px;
 }
 header nav {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-header nav .toggle-menu {
-    color: rgb(37, 28, 28);
-    font-size: 22px;
+    margin-right: 100px;
 }
 header nav ul {
     display: flex;
+    margin-left: 100px;
 }
 header nav ul li a {
-    padding: 40px 10px;
+    padding: 40px 20px;
     display: block;
     color: rgb(55, 160, 187);
     text-decoration: none;
@@ -55,19 +53,51 @@ header nav ul li a:hover {
     color: rgb(24, 94, 7);
     border-bottom: 1px solid rgb(50, 50, 53);
 }
-header nav .form {
-    width: 40px;
-    height: 30px;
-    position: relative;
-    margin-left: 30px;
-    border-left: 1px solid white;
-}
-header nav .form i {
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    top: 50%;
-    transform: translate(-50%);
-    right: 0;
-}
 /*End Header*/
+
+/*Start Landing*/
+.landing {
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url(../../images/img_01.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+.landing .text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 50px;
+    background-color: rgb(62, 83, 76);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.landing .text .content {
+    max-width: 500px;
+}
+.landing .text .content h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.landing .text .content h2 span {
+    text-transform: uppercase;
+}
+.landing .text .content p {
+    font-size: 14px;
+    line-height: 2;
+}
+/*End Landing*/
