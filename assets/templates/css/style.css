@@ -95,9 +95,30 @@ header nav ul li a:hover {
 }
 .landing .text .content h2 span {
     text-transform: uppercase;
+    color: #6ea3db;
 }
 .landing .text .content p {
     font-size: 14px;
     line-height: 2;
 }
 /*End Landing*/
+
+/*Start Services*/
+.services {
+    padding-top: 20px auto;
+}
+.services-container {
+    display: flex;
+    text-align: inherit;
+    margin: 20px;
+    padding: 20px;
+}
+.services .srv-box h3 {
+    margin-bottom: 30px;
+    color: #082441;
+}
+.services .srv-box p {
+    line-height: 2;
+    color: #3f3939;
+}
+/*End Services*/
